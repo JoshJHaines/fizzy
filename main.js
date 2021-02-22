@@ -2,13 +2,19 @@
  * YOUR CODE GOES RIGHT HERE! *
  ******************************/
 
-
-
-
-
-
-
-
+function fizzy(num) {
+	if (num % 3 === 0 && num % 5 === 0) {
+		return "FizzBuzz";
+	}
+	if (num % 3 === 0) {
+		return "Fizz";
+	}
+	if (num % 5 === 0) {
+		return "Buzz";
+	} else {
+		return num;
+	}
+}
 
 /**********************************
  *      OUR CODE GOES BELOW.      *
@@ -16,11 +22,10 @@
  * DO NOT ADD OR CHANGE ANYTHING! *
  **********************************/
 
-
 if (typeof fizzy === "undefined") {
-  fizzy = undefined;
+	fizzy = undefined;
 }
 
 module.exports = {
-  fizzy,
+	fizzy,
 };
